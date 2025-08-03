@@ -1,0 +1,44 @@
+:root { --bg:#0b0b0b; --panel:#1d1f23; --txt:#ffffff; --acc:#3da9ff; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Raleway, system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--txt);
+  line-height: 1.45;
+}
+
+.site-header, .site-footer { background: var(--panel); padding: 16px 24px; }
+
+.site-header nav a {
+  margin-right: 12px;
+  color: var(--acc);
+  text-decoration: none;
+}
+.site-header nav a:hover { text-decoration: underline; }
+
+.wrap { max-width: 1000px; margin: 24px auto; padding: 24px; background: var(--panel); }
+
+h1, h2, h3 { color: var(--acc); margin-top: 0; }
+
+p, li { text-align: left; max-width: 50em; }        /* approx 30–50em measure */
+
+a { color: var(--acc); }
+
+/* Attractions list */
+.attractions ul { padding-left: 1.25rem; margin: 0 0 16px; }
+.attractions li { margin: 4px 0; }
+
+/* Images and figures */
+.attractions img { display: block; width: 100%; max-width: 420px; border-radius: 8px; }
+figure { margin: 0 0 12px; }
+figcaption { font-size: 0.9rem; opacity: 0.85; margin-top: 4px; }
+
+/* Paragraphs under images */
+.attractions p { margin: 0 0 20px; }
+
+/* Float only the first image */
+figure.float { float: right; margin: 0 0 16px 16px; }
+.clear { clear: both; }
