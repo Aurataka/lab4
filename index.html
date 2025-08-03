@@ -1,77 +1,82 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tokyo Travel Guide</title>
-  <meta name="description" content="A simple visitor guide to Tokyo with top attractions, photos, and quick tips.">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+  <meta name="description" content="A visitor guide to Tokyo featuring top attractions, tips, and travel essentials.">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <h1>Tokyo</h1>
     <nav aria-label="Primary">
-      <a href="#why">Why visit</a>
+      <a href="#why">Why Visit</a>
       <a href="#attractions">Attractions</a>
-      <a href="#tips">Good to know</a>
+      <a href="#tips">Good to Know</a>
     </nav>
   </header>
 
   <main class="wrap">
     <article>
-      <h2 id="why">Why visit Tokyo</h2>
-      <p>Tokyo is a mix of quiet temples, lively shopping streets, and food on every corner. Neighborhoods like Asakusa, Shibuya, and Harajuku feel close thanks to fast and simple transit. Visitors can see historic sites in the morning and neon city views at night without a long trip. It is easy to navigate, clean, and very welcoming to first-time travelers.</p>
+      <section id="why">
+        <h2>Why visit Tokyo</h2>
+        <p>Tokyo is a city of contrasts, where centuries-old temples sit beside skyscrapers, bustling shopping districts mix with serene parks, and local cuisine delights travelers on every corner. It’s a destination that blends tradition and modernity seamlessly.</p>
+        <p>From its reliable train system and countless entertainment options to its cultural landmarks and vibrant neighborhoods, Tokyo offers something for every traveler—whether you’re looking for quiet reflection or neon-lit excitement.</p>
+      </section>
 
-      <section id="attractions" class="attractions">
-        <h3>Top attractions</h3>
-        <ul>
-          <li><a href="https://www.senso-ji.jp/english/" target="_blank" rel="noopener">Sensō-ji Temple</a></li>
-          <li><a href="https://www.meijijingu.or.jp/en/" target="_blank" rel="noopener">Meiji Jingu</a></li>
-          <li><a href="https://www.shibuyastation.com/shibuya-crossing/" target="_blank" rel="noopener">Shibuya Crossing</a></li>
-          <li><a href="https://www.tokyo-skytree.jp/en/" target="_blank" rel="noopener">Tokyo Skytree</a></li>
-        </ul>
+      <h3>Top attractions</h3>
+      <ul>
+        <li><a href="#sensoji">Sensō-ji Temple</a></li>
+        <li><a href="#meiji">Meiji Jingu</a></li>
+        <li><a href="#shibuya">Shibuya Crossing</a></li>
+        <li><a href="#skytree">Tokyo Skytree</a></li>
+      </ul>
 
-       <p>Nakamise street leads to Tokyo’s oldest temple…</p>
+      <section id="attractions" class="cards">
+        <div class="card" id="sensoji">
+          <img src="images/sensoji.jpg" alt="Sensō-ji Temple in Asakusa">
+          <h3><a href="https://www.senso-ji.jp/english/" target="_blank" rel="noopener">Sensō-ji Temple</a></h3>
+          <p><strong>Tip:</strong> Visit early in the morning for fewer crowds and peaceful walks.</p>
+          <p>Sensō-ji is Tokyo’s oldest temple, located in Asakusa. It features a grand entrance gate, a five-story pagoda, and Nakamise Street lined with shops selling souvenirs and snacks. The temple grounds are perfect for photos and exploring traditional architecture.</p>
+        </div>
 
-<div class="clear"></div>
-        <!-- 2) Text above each stacked image -->
-        <p>A quiet shrine set in a forest beside Harajuku. Calm paths and broad torii gates.</p>
-        <figure>
-          <img src="images/meiji-jingu.jpg" alt="Tall wooden torii on a forest path at Meiji Jingu">
-          <figcaption>Meiji Jingu</figcaption>
-        </figure>
+        <div class="card" id="meiji">
+          <img src="images/meiji-jingu.jpg" alt="Meiji Jingu Shrine forest entrance">
+          <h3><a href="https://www.meijijingu.or.jp/en/" target="_blank" rel="noopener">Meiji Jingu</a></h3>
+          <p><strong>Tip:</strong> Take time to enjoy the peaceful forest paths leading to the shrine.</p>
+          <p>Set in a lush forest near Harajuku, Meiji Jingu is one of Tokyo’s most serene spots. Broad pathways lined with tall torii gates lead to the main shrine, offering a calming escape from the city. It’s a must-visit for cultural and historical appreciation.</p>
+        </div>
 
-        <p>Busy scramble with bright screens and cafés above that offer overhead views.</p>
-        <figure>
-          <img src="images/shibuya.jpg" alt="Crowds crossing multiple crosswalks at Shibuya at night">
-          <figcaption>Shibuya Crossing</figcaption>
-        </figure>
+        <div class="card" id="shibuya">
+          <img src="images/shibuya.jpg" alt="Shibuya Crossing at night">
+          <h3><a href="https://www.shibuyastation.com/shibuya-crossing/" target="_blank" rel="noopener">Shibuya Crossing</a></h3>
+          <p><strong>Tip:</strong> For the best view, watch from a nearby café overlooking the intersection.</p>
+          <p>Shibuya Crossing is one of the busiest pedestrian intersections in the world. It’s surrounded by shops, restaurants, and nightlife. The area’s energy and bright lights perfectly represent Tokyo’s modern vibe and make it a popular photo spot.</p>
+        </div>
 
-        <p>Observation decks with wide city views. Sunset on a clear day is the best time.</p>
-        <figure>
-          <img src="images/skytree.jpg" alt="Tokyo Skytree rising above the skyline on a clear day">
-          <figcaption>Tokyo Skytree</figcaption>
-        </figure>
+        <div class="card" id="skytree">
+          <img src="images/skytree.jpg" alt="Tokyo Skytree observation tower">
+          <h3><a href="https://www.tokyo-skytree.jp/en/" target="_blank" rel="noopener">Tokyo Skytree</a></h3>
+          <p><strong>Tip:</strong> Go near sunset to see Tokyo transform into a sea of lights.</p>
+          <p>Tokyo Skytree is the tallest structure in Japan, featuring observation decks with panoramic city views. On clear days, you can see Mt. Fuji. The base of the tower includes shopping, dining, and an aquarium, making it perfect for a half-day visit.</p>
+        </div>
       </section>
 
       <section id="tips">
         <h3>Good to know</h3>
         <ul>
-          <li>Use IC cards like Suica or PASMO for trains and shops.</li>
-          <li>Card is common, but small stalls may prefer cash.</li>
-          <li>Stations and signs have clear English guidance.</li>
+          <li>Use Suica or PASMO cards for convenient travel and shopping.</li>
+          <li>Cash is still common, but many places accept credit cards.</li>
+          <li>English signs are widely available in train stations and major attractions.</li>
         </ul>
       </section>
     </article>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2025 Gwyndolyn Severson</p>
-    <p class="credits">
-      Image credits: replace with your sources and licenses. Example format:
-      senso-ji.jpg - Photographer Name, Site, License URL
-    </p>
+    <p>© 2025 Gwyndolyn Severson</p>
   </footer>
 </body>
 </html>
